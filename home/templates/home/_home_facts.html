@@ -1,0 +1,23 @@
+{% for item in home_facts %}
+
+<div class="heading heading-center m-b-40">
+    <h2>{{item.facts_title}}</h2>
+    {% if item.facts_desc %}
+        <span class="lead">{{item.facts_desc}}</span>
+    {% endif %}
+</div>
+<div class="row">
+    <div class="owl-carousel carousel-facts">
+
+        {% for fact in item.facts.all %}
+            <div class="text-center block-count-box">
+                <i class="icon-counter fa {{fact.icon}}"></i>
+                <span class="max-count">{{fact.value}}</span><span class="value-count">{{fact.value_end}}</span>
+                <div class="title-count">{{fact.description}}</div>
+            </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endfor %}

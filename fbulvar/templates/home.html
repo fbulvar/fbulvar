@@ -1,0 +1,47 @@
+{% extends "base.html" %}{% load cms_tags menu_tags news_tags home_tags staticfiles sekizai_tags i18n %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="no-padding">
+    <div class="boxed-slider">
+        <div class="owl-bg-img">
+            <div class="container container-fullscreen">
+                <div class="text-middle slider-content">
+                    <div class="text-center text-light">
+                        {% home_slider %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="container">
+        {% home_customer_adv %}
+    </div>
+</section>
+
+<section class="facts p-t-70 p-b-100">
+    <div class="container">
+        {% home_facts %}
+    </div>
+</section>
+
+<section class="p-b-80">
+    <div class="container">
+        <div class="heading heading-center m-b-60">
+            {% home_news %}
+        </div>
+        <div class="row">
+            {% home_news_list %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

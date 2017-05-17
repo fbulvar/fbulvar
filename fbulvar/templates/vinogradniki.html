@@ -1,0 +1,54 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner background-vinogradniki page-title-center">
+    <div class="container">
+        <div class="page-title col-md-8">
+            <h1>{% page_attribute "page_title" %}</h1>
+            {% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
+        </div>
+    </div>
+</section>
+
+<section class="p-b-0" id="section-about">
+  <div class="container">
+      <div class="heading heading-center m-b-20">
+        <h2>Виноградные просторы</h2>
+      </div>
+      <div class="text-block-left">
+        <p>Виноградники компании и  виноградарские хозяйства, постоянно работающие с ТМ «Французский Бульвар» расположены  между реками Днестр и Дунай степного юга Украины. Климатические условия и почвы благоприятны для выращивания винограда красных сортов и белых шампанского стиля с ранним периодом сбора урожая. Общий массив насаждений этой зоны составляет около 10000 гектаров. Из них 2 500 га находится  поблизости от перерабатывающего центра в селе Розовка Саратского района Одесской области.</p>
+        <p>Сортовой состав виноградников позиционирован на изготовление разных типов игристых вин. Доминируют Шардоне, группа Пино, Алиготе, Рислинг, Совиньон, Траминер и мускатные сорта. Преобладающие красные сорта: Каберне-Совиньон, Мерло, Саперави  и автохтонный  Одесский Черный.</p>
+      </div>
+  </div>
+</section>
+
+<section class="p-t-0 p-b-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 about_gallery">
+                <img src="{% static 'images/vinogradniki/vinogradniki_01.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
+                <img class="img-responsive" src="{% static 'images/vinogradniki/vinogradniki_02.jpg' %}" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
+                <img class="img-responsive" src="{% static 'images/vinogradniki/vinogradniki_03.jpg' %}" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
+                <img class="img-responsive" src="{% static 'images/vinogradniki/vinogradniki_04.jpg' %}" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
+                <img class="img-responsive" src="{% static 'images/vinogradniki/vinogradniki_05.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

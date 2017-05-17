@@ -1,0 +1,8 @@
+{% for item in home_news %}
+
+    <h2>{{item.news_title}}</h2>
+    {% if item.news_desc %}
+    	<span class="lead">{{item.news_desc}}</span>
+    {% endif %}
+
+{% endfor %}

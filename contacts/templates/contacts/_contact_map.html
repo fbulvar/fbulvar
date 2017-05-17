@@ -1,0 +1,15 @@
+{% for item in contact_map %}
+    function initMap() {
+    var myLatLng = {lat: {{item.lat}}, lng: {{item.lng}}};
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: {{item.scale}},
+      center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map
+    });
+    }
+{% endfor %}

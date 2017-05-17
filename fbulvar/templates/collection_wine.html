@@ -1,0 +1,56 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner page-title-center">
+    <div class="container">
+        <div class="page-title col-md-8">
+            <h1>Коллекции вин</h1>
+            <span>какой-то подзаголовок который можно написать или убрать</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="p-b-0">
+  <div class="container">
+      <div class="heading heading-center  m-b-40">
+          <h2>Современные вина</h2>
+          <span class="lead">Под торговой маркой «Французский Бульвар» выпускается три коллекции игристых вин, изготовленных резервуарным методом. Коллекции отличаются между собой типом виноматериалов и купажей, сроком выдержки вин на осадке, дрожжевыми культурами  и дизайном.</span>
+      </div><!--
+      <div class="row">
+          <div class="col-md-12">
+              <p>Под торговой маркой «Французский Бульвар» выпускается три коллекции игристых вин, изготовленных резервуарным методом. Коллекции отличаются между собой типом виноматериалов и купажей, сроком выдержки вин на осадке, дрожжевыми культурами  и дизайном.</p>
+          </div>
+      </div>-->
+  </div>
+</section>
+
+<section class="p-t-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 heading heading-center p-b-50">
+              <h2>Special Edition</h2>
+              <span class="lead">Коллекции отличаются между собой типом виноматериалов и купажей, сроком выдержки вин на осадке, дрожжевыми культурами  и дизайном.</span>
+              <img src="{% static 'images/wine_collections/special_edition.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-12 heading heading-center p-b-50">
+              <h2>Sweet Dreams</h2>
+              <span class="lead">Коллекция состоит из трех наименований, которые отличаются между собой типом виноматериалов и купажей, сроком выдержки вин на осадке, дрожжевыми культурами  и дизайном.</span>
+              <img src="{% static 'images/wine_collections/sd.jpg' %}" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-12 heading heading-center">
+              <h2>Grand Cuvee</h2>
+              <span class="lead">Коллекции отличаются между собой типом виноматериалов и купажей, сроком выдержки вин на осадке, дрожжевыми культурами  и дизайном.</span>
+              <img src="{% static 'images/wine_collections/grand_cuvee.jpg' %}" class="img-responsive" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

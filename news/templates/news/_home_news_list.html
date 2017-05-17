@@ -1,0 +1,19 @@
+{% load thumbnail %}
+
+{% for item in home_news %}
+	<article class="col-md-6 col-sm-12 home_news">
+		<a href="{{ item.get_absolute_url }}">
+			<img class="img-responsive" src="{% thumbnail item.image 360x200 crop="smart" %}" alt="{{item.title}}" title="{{item.title}}" />
+		</a>
+		<div class="home_news_text">
+			<h3><a href="{{ item.get_absolute_url }}">{{item.title}}</a></h3>
+			{{item.text|truncatechars_html:107|safe}}
+		</div>
+	</article>
+{% endfor %}
+
+
+
+
+
+

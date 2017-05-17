@@ -1,0 +1,48 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner background-boutiques page-title-center">
+  <div class="container">
+    <div class="page-title col-md-8">
+      <h1>{% page_attribute "page_title" %}</h1>
+      {% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
+    </div>
+  </div>
+</section>
+
+<section class="p-b-0">
+  <div class="container">
+      <div class="heading heading-center m-b-40">
+          {% placeholder 'boutiques_title' %}<!--
+          <h2>Фирменные магазины</h2>
+          <p class="sub">Два фирменных бутика в Одессе – места, где  мы не только продаем вина из первых рук, но и общаемся с клиентами компании, проводим семинары и занятия с сомелье, дегустации,  встречи с нашими друзьями и  некоторые эксперименты в гастрономическом сопровождения для наших вин.</p>-->
+      </div>
+  </div>
+</section>
+
+<section class="p-t-0 p-b-30">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading heading-center m-b-20">
+          {% placeholder 'boutiques_photo' %}
+          <img src="{% static 'images/boutiques/boutiques_01.jpg' %}" class="img-responsive" alt="">
+          <p class="sub">Будем рады видеть вас в наших бутиках на Французском Бульваре 10 и проспекте Академика Глушко 14/5</p>
+        </div>
+      </div>
+    </div>
+    <div class="heading heading-center m-b-40 boutiques">
+        {% placeholder 'boutiques_ecommerce' %}
+        <h2>Интернет-магазин</h2>
+        <p class="sub">Нашу продукцию вы можете приобрести также и онлайн в партнерских торговых сетях</p>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

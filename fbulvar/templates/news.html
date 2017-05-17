@@ -1,0 +1,132 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}
+{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner page-title-center">
+    <div class="container">
+        <div class="page-title col-md-8">
+            <h1>Новости</h1>
+            <span>какой-то подзаголовок который можно написать или убрать</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="p-b-0">
+  <div class="container">
+      <div class="heading heading-center m-b-40" data-animation="fadeInUp">
+          <h2>Новости нашей компании (2 варианта)</h2>
+          <span class="lead">Статьи и фото всех жанров, показывающие жизнь торговой марки</span>
+      </div>
+  </div>
+</section>
+
+<section class="background-grey">
+    <div class="container portfolio">
+        <div class="isotope portfolio-items" data-isotope-item-space="3" data-isotope-mode="masonry" data-isotope-col="3" data-isotope-item=".portfolio-item">
+            <div class="portfolio-item desert breakfast">
+                <div class="portfolio-image effect social-links">
+                    <img src="{% static 'images/news/news_one.jpg' %}" alt="">
+                    <div class="image-box-content">
+                        <p>
+                            <a href="{% static 'images/news/news_one.jpg' %}" data-lightbox="image" title="Your image title here!"><i class="fa fa-expand"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-description">
+                    <h4 class="title">Название последней новости</h4>
+                </div>
+                <div class="portfolio-details">
+                    <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни...</p>
+                    <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                </div>
+            </div>
+            <div class="portfolio-item desert breakfast">
+                <div class="portfolio-image effect social-links">
+                    <img src="{% static 'images/news/news_one.jpg' %}" alt="">
+                    <div class="image-box-content">
+                        <p>
+                            <a href="{% static 'images/news/news_one.jpg' %}" data-lightbox="image" title="Your image title here!"><i class="fa fa-expand"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-description">
+                    <h4 class="title">Название предпоследней новости</h4>
+                </div>
+                <div class="portfolio-details">
+                    <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни...</p>
+                    <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                </div>
+            </div>
+            <div class="portfolio-item desert breakfast">
+                <div class="portfolio-image effect social-links">
+                    <img src="{% static 'images/news/news_one.jpg' %}" alt="">
+                    <div class="image-box-content">
+                        <p>
+                            <a href="{% static 'images/news/news_one.jpg' %}" data-lightbox="image" title="Your image title here!"><i class="fa fa-expand"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-description">
+                    <h4 class="title">Название какой-то новости</h4>
+                </div>
+                <div class="portfolio-details">
+                    <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни...</p>
+                    <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+<section class="p-b-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 m-b-60">
+                <article class="">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{% static 'images/news/news_one.jpg' %}" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2><a href="#">Цвет и вкус осени </a></h2>
+                        <p>Осенние ряды шпалер поют гитарными струнами под октябрьскими ветрами.  Вместе с хризантемами расцветает пора зрелости плодов. Виноград погрузил виноделов в заботы о судьбе урожая 2015 года...</p>
+                        <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                    </div>
+                </article>
+                <hr/>
+            </div>
+            <div class="col-md-10 col-md-offset-1 m-b-60">
+                <article class="">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{% static 'images/news/news_one.jpg' %}" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2><a href="#">Цвет и вкус осени </a></h2>
+                        <p>Осенние ряды шпалер поют гитарными струнами под октябрьскими ветрами.  Вместе с хризантемами расцветает пора зрелости плодов. Виноград погрузил виноделов в заботы о судьбе урожая 2015 года. Ежегодный цикл рождения плодов, сока и вина обретет смысл только когда наполнятся бокалы...</p>
+                        <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-10 col-md-offset-1 m-b-60">
+                <article class="">
+                    <div class="col-md-4">
+                        <img class="img-responsive" src="{% static 'images/news/news_one.jpg' %}" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        <h2><a href="#">Цвет и вкус осени </a></h2>
+                        <p>Осенние ряды шпалер поют гитарными струнами под октябрьскими ветрами.  Вместе с хризантемами расцветает пора зрелости плодов. Виноград погрузил виноделов в заботы о судьбе урожая 2015 года...</p>
+                        <a href="#" class="button border rounded red"><strong>Читать больше</strong></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+{% endblock content %}

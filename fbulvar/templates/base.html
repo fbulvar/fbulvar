@@ -1,0 +1,134 @@
+{% load staticfiles cms_tags menu_tags contact_tags sekizai_tags i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <title>{% block title %}{% page_attribute "page_title" %}{% endblock %} - {% if LANGUAGE_CODE == 'uk' %}Французький Бульвар{% elif LANGUAGE_CODE == 'ru' %}Французский Бульвар{% else %}French Boulevard{% endif %}</title>
+  <meta name="description" content="{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}">
+  <meta name="author" content="{% if LANGUAGE_CODE == 'uk' %}Французький Бульвар{% elif LANGUAGE_CODE == 'ru' %}Французский Бульвар{% else %}French Boulevard{% endif %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "css/font-awesome.min.css" type="text/css" %}">
+{#  <link rel="stylesheet" href="{% static "css/linecons.css" type="text/css" %}"> #}
+  <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}">
+{#  <link rel="stylesheet" href="{% static "css/animate.min.css" %}"> #}
+{#  <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}"> #}
+{#  <link rel="stylesheet" href="{% static "css/flaticon.css" %}"> #}
+  <link rel="stylesheet" href="{% static "css/theme-base.css" %}">
+  <link rel="stylesheet" href="{% static "css/theme-elements.css" %}">
+  <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Open+Sans:300,400,600,700,800|Philosopher:400,700&amp;subset=cyrillic" rel="stylesheet">
+  {% block css %}{% endblock css %}
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  {% render_block "css" %}
+</head>
+<body class="wide">
+<!-- Google Tag Manager -->
+{% cms_toolbar %}
+  <div class="loader-wrapper">
+  </div>
+  <!-- HEADER -->
+  <header id="header" class="">
+    <div id="header-wrap">
+      <div class="container">
+          <div id="logo">
+              <a href="/{{ LANGUAGE_CODE }}/" class="logo" data-dark-logo="images/logo-dark.png">
+              <img class="img-responsive" src="{% static 'images/logo/logo.svg' %}" alt="Logo">
+              </a>
+          </div>
+          <div class="nav-main-menu-responsive">
+              <button data-toggle="collapse" data-target=".main-menu-collapse"><i class="fa fa-navicon"></i></button>
+          </div>
+          <div class="navbar-collapse collapse main-menu-collapse navigation-wrap">
+              <div class="container">
+                  <nav id="mainMenu" class="main-menu mega-menu">
+                      <ul class="main-menu nav nav-pills">
+                        {% show_menu 0 100 100 100 "menu.html" %}
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    {% block content %}{% endblock content %}
+  </div>
+
+  {% static_placeholder "Footer" %}
+  <footer class="background-footer text-grey bkp-04">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                    <div class="shop">
+                        <ul>
+                          <li>
+                            <img src="{% static 'images/footer/shopping1.svg' %}" alt="{% trans 'Фирменный магазин' %}" title="{% trans 'Фирменный магазин' %}"/>{% trans 'Французский Бульвар 10, Одесса' %}<br><span class="time">{% trans 'Пн-Пт 9:00-19:00, +38 (048) 722-17-74' %}</span>
+                          </li>
+                          <li>
+                            <img src="{% static 'images/footer/shopping1.svg' %}" alt="{% trans 'Фирменный магазин' %}" title="{% trans 'Фирменный магазин' %}"/>{% trans 'пр-т Академика Глушко 14/5, Одесса' %}<br><span class="time">{% trans 'Пн-Пт 9:00-19:00, +38 (048) 722-17-74' %}</span>
+                          </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-4">
+                  <div class="widget clearfix">
+                    <!--<h4 class="widget-title">Новости, Статьи и Акции компании</h4>-->
+                    <div class="row">
+                      <div class="col-xs-6 col-sm-6 footer-icons">
+                        <a href="https://www.facebook.com/fbulvar.com.ua" class="facebook-bg-hover">
+                          <i class="fa fa-facebook"></i>
+                          <!--<img class="facebook" src="{% static 'images/logo/facebook.svg' %}" alt="Facebook" title="Facebook"/>-->
+                        </a>
+                      </div>  
+                      <div class="col-xs-6 col-sm-6 footer-icons">
+                        <a href="/">
+                          <img src="{% static 'images/logo/guliev-logo.png' %}" alt="Guliev Wine Group" title="Guliev Wine Group"/>
+                        </a>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+                    <div class="widget clearfix widget-contact-us">
+                        <!--<h4 class="widget-title">Контакты</h4>-->
+                        {% contacts_footer %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-content">
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-7 col-lg-9">
+                <div class="copyright-text"> <!--text-left-->
+                    {% now "Y" as current_year %}
+                    1997-{{ current_year }} &copy; <a href="/{{ LANGUAGE_CODE }}/" title="Французький Бульвар">Французький Бульвар</a> &#8482
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-5 col-lg-3">
+                <div class="copyright-text">{% trans 'Создание сайта' %} <a href="https://senchuria.com" title="{% trans 'Создание сайта' %}">Senchuria</a></div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <!-- <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a> -->
+  <!-- SCRIPTS -->
+  <script src="{% static "js/jquery-1.11.2.min.js" %}"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="{% static "js/plugins.js" %}"></script>
+  <!--<script src="{% static "js/owl.carousel.min.js" %}"></script> -->
+  <script src="{% static "js/theme-functions.js" %}"></script>
+{% block js %}{% endblock js %}
+{% render_block "js" %}
+</body>
+</html>

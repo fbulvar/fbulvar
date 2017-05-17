@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-28 16:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: collection/cms_apps.py:8
+msgid "Collection Application"
+msgstr ""
+
+#: collection/models.py:9 news/models.py:9
+msgid "Название категории"
+msgstr ""
+
+#: collection/models.py:10 collection/models.py:28 news/models.py:10
+#: news/models.py:25
+msgid "URL"
+msgstr ""
+
+#: collection/models.py:11 news/models.py:11
+msgid "Cсылка для категории. Формируется автоматически. Не изменять"
+msgstr ""
+
+#: collection/models.py:12 collection/models.py:31 news/models.py:28
+msgid "Meta description"
+msgstr ""
+
+#: collection/models.py:14
+msgid "Чтобы категорию отображать на сайте, она должна быть опубликована"
+msgstr ""
+
+#: collection/models.py:15 collection/models.py:38 contacts/models.py:14
+msgid "Очередность вывода"
+msgstr ""
+
+#: collection/models.py:21
+msgid "Категория вин"
+msgstr ""
+
+#: collection/models.py:22
+msgid "Категории вин"
+msgstr ""
+
+#: collection/models.py:27
+msgid "Название (title)"
+msgstr ""
+
+#: collection/models.py:29
+msgid "Cсылка на продукцию. Формируется автоматически. Не изменять"
+msgstr ""
+
+#: collection/models.py:30 home/models.py:8 news/models.py:27
+msgid "H1"
+msgstr ""
+
+#: collection/models.py:32
+msgid "Описание"
+msgstr ""
+
+#: collection/models.py:34
+msgid "Фото продукции"
+msgstr ""
+
+#: collection/models.py:35
+msgid "Фото должно быть больше 700px высотой и размером меньше 500 Кб"
+msgstr ""
+
+#: collection/models.py:37
+msgid "Для отображения на сайте, продукция должна быть опубликована"
+msgstr ""
+
+#: collection/models.py:44 collection/models.py:45
+msgid "Продукция"
+msgstr ""
+
+#: contacts/models.py:6
+msgid "Название"
+msgstr ""
+
+#: contacts/models.py:6
+msgid "Например: Телефон"
+msgstr ""
+
+#: contacts/models.py:7
+msgid "Иконка для контакта"
+msgstr ""
+
+#: contacts/models.py:8
+msgid "Например fa-phone  Примеры иконок http://fontawesome.io/icons/"
+msgstr ""
+
+#: contacts/models.py:9 contacts/models.py:20
+msgid "Контакт"
+msgstr ""
+
+#: contacts/models.py:9
+msgid "Например: +38 (048) 722-17-74"
+msgstr ""
+
+#: contacts/models.py:11
+msgid "Опубликовать на странице контактов"
+msgstr ""
+
+#: contacts/models.py:13
+msgid "Опубликовать в footer (внизу страницы)"
+msgstr ""
+
+#: contacts/models.py:21
+msgid "Контакты"
+msgstr ""
+
+#: contacts/models.py:26
+msgid "Название карты"
+msgstr ""
+
+#: contacts/models.py:26
+msgid "Например: Главный офис"
+msgstr ""
+
+#: contacts/models.py:27
+msgid "Latitude"
+msgstr ""
+
+#: contacts/models.py:27
+msgid "Например 48.8569878"
+msgstr ""
+
+#: contacts/models.py:28
+msgid "Longitude"
+msgstr ""
+
+#: contacts/models.py:28
+msgid "Например 2.2956073"
+msgstr ""
+
+#: contacts/models.py:29
+msgid "Масштабирование карты"
+msgstr ""
+
+#: contacts/models.py:36
+msgid "Карта"
+msgstr ""
+
+#: contacts/models.py:37
+msgid "Карты"
+msgstr ""
+
+#: fbulvar/settings.py:146 fbulvar/settings.py:160
+msgid "ru"
+msgstr ""
+
+#: fbulvar/settings.py:147 fbulvar/settings.py:167
+msgid "uk"
+msgstr ""
+
+#: fbulvar/settings.py:148 fbulvar/settings.py:174
+msgid "en"
+msgstr ""
+
+#: fbulvar/templates/base.html:72 fbulvar/templates/base.html:75
+msgid "Фирменный магазин"
+msgstr "Brand store"
+
+#: fbulvar/templates/base.html:72
+msgid "Французский Бульвар 10, Одесса"
+msgstr "French Boulevard 10, Odesa"
+
+#: fbulvar/templates/base.html:72 fbulvar/templates/base.html:75
+msgid "Пн-Пт 9:00-19:00, +38 (048) 722-17-74"
+msgstr "Mon-Fri 9:00-19:00, +38 (048) 722-17-74"
+
+#: fbulvar/templates/base.html:75
+msgid "пр-т Академика Глушко 14/5, Одесса"
+msgstr "pr-ct Akademika Glushko 14/5, Odesa"
+
+#: fbulvar/templates/base.html:117
+msgid "Создание сайта"
+msgstr "Web development"
+
+#: fbulvar/templates/contactform.html:44
+msgid "Submission successful"
+msgstr ""
+
+#: fbulvar/templates/contactform.html:45
+msgid "Thank You! Your form has been successfully submitted!"
+msgstr ""
+
+#: home/models.py:7 news/models.py:24
+msgid "Заглавие"
+msgstr ""
+
+#: home/models.py:8
+msgid "Самый важный текст (для SEO)"
+msgstr ""
+
+#: home/models.py:9
+msgid "Надпись на кнопке"
+msgstr ""
+
+#: home/models.py:10
+msgid "URL на страницу"
+msgstr ""
+
+#: home/models.py:10
+msgid "Указать URL для каждой языковой версии"
+msgstr ""
+
+#: home/models.py:13
+msgid "Преимущества для клиентов - Заглавие"
+msgstr ""
+
+#: home/models.py:14
+msgid "Преимущества для клиентов - Подзаголовок"
+msgstr ""
+
+#: home/models.py:15
+msgid "Преимущества для клиентов - Текст"
+msgstr ""
+
+#: home/models.py:17
+msgid "Факты о нас - Заглавие"
+msgstr ""
+
+#: home/models.py:18
+msgid "Факты о нас - Подзаголовок"
+msgstr ""
+
+#: home/models.py:20
+msgid "Новости - Заглавие"
+msgstr ""
+
+#: home/models.py:21
+msgid "Новости - Подзаголовок"
+msgstr ""
+
+#: home/models.py:27 home/models.py:28
+msgid "Главная страница"
+msgstr ""
+
+#: home/models.py:32
+msgid "Картинка преимущества"
+msgstr ""
+
+#: home/models.py:33
+msgid "Заглавие преимущества"
+msgstr ""
+
+#: home/models.py:34
+msgid "Краткое описание преимущества"
+msgstr ""
+
+#: home/models.py:35 home/models.py:54
+msgid "Опубликовано"
+msgstr ""
+
+#: home/models.py:36 home/models.py:55
+msgid "Порядок показа"
+msgstr ""
+
+#: home/models.py:43
+msgid "Преимущество для клиентов"
+msgstr ""
+
+#: home/models.py:44
+msgid "Преимущества для клиентов"
+msgstr ""
+
+#: home/models.py:49
+msgid "Иконка"
+msgstr ""
+
+#: home/models.py:50
+msgid "Например fa-history  Примеры иконок http://fontawesome.io/icons/"
+msgstr ""
+
+#: home/models.py:51
+msgid "Значение"
+msgstr ""
+
+#: home/models.py:52
+msgid "Единица измерения"
+msgstr ""
+
+#: home/models.py:53
+msgid "Краткий подзаголовок"
+msgstr ""
+
+#: home/models.py:62
+msgid "Факт о нас"
+msgstr ""
+
+#: home/models.py:63
+msgid "Факты о нас"
+msgstr ""
+
+#: news/cms_apps.py:8
+msgid "News Application"
+msgstr ""
+
+#: news/models.py:13
+msgid "Категории желательно не удалять. Просто снимите отметку Опубликовано"
+msgstr ""
+
+#: news/models.py:19
+msgid "Категория"
+msgstr ""
+
+#: news/models.py:20
+msgid "Категории"
+msgstr ""
+
+#: news/models.py:26
+msgid "Cсылка на новость. Формируется автоматически. Не изменять"
+msgstr ""
+
+#: news/models.py:29
+msgid "Текст Новости"
+msgstr ""
+
+#: news/models.py:31
+msgid "Фото новости"
+msgstr ""
+
+#: news/models.py:32
+msgid "Дата публикации"
+msgstr ""
+
+#: news/models.py:34
+msgid "Для отображения на сайте, новость должна быть опубликована"
+msgstr ""
+
+#: news/models.py:35
+msgid "Колличество просмотров"
+msgstr ""
+
+#: news/models.py:41
+msgid "Новость"
+msgstr ""
+
+#: news/models.py:42
+msgid "Новости"
+msgstr ""

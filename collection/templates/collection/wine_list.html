@@ -1,0 +1,55 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n thumbnail %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block meta_description %}{% page_attribute 'meta_description' %}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner page-title-center">
+    <div class="container">
+        <div class="page-title col-md-8">
+            <h1>{% page_attribute "page_title" %}</h1>
+            {% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
+        </div>
+    </div>
+</section>
+
+<section class="p-b-0">
+  <div class="container">
+      <div class="heading heading-center m-b-40">
+          {% for item in collection_wines_title %}
+            <h2>{{ item.title }}</h2>
+            <span class="lead">{{ item.description }}</span>
+          {% endfor %}
+      </div>
+  </div>
+</section>
+
+<section class="p-t-20 p-b-0">
+    <div class="container">
+
+      {% for cat in category_wines %}
+        <div class="row">
+          <div class="col-md-12 heading heading-center">
+            <h2>{{ cat }}</h2>
+            <span class="lead">{{ cat.meta_description }}</span>
+
+              {% for item in cat.some_wines %}
+                <div class="col-md-3 collection-wines collection-center p-b-70 p-t-30">
+                  <a href="{% url 'collection:collection-details' item.slug %}">
+                    <img class="img-responsive" src="{% thumbnail item.image 0x500 crop="smart" %}" alt="{{item.title}}" title="{{item.title}}" />
+                  </a>
+                  <h3><a href="{% url 'collection:collection-details' item.slug %}">{{item.title}}</a></h3>
+                </div>
+              {% endfor %}
+
+          </div>
+        </div>
+      {% endfor %}  
+
+    </div>
+</section>
+
+{% endblock content %}

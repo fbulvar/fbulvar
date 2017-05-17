@@ -1,0 +1,10 @@
+{% load thumbnail %}
+
+{% for item in collection_wines %}
+	<div class="col-md-3 collection-wines collection-center p-b-70 p-t-30">
+		<a href="{% url 'collection:collection-details' item.slug %}">
+			<img class="img-responsive" src="{% thumbnail item.image 0x500 crop="smart" %}" alt="{{item.title}}" title="{{item.title}}" />
+		</a>
+		<h3><a href="{% url 'collection:collection-details' item.slug %}">{{item.title}}</a></h3>
+	</div>
+{% endfor %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles sekizai_tags i18n thumbnail %}
+
+{% block title %}{{object.title}}{% endblock title %}
+{% block meta_description %}{{object.meta_description}}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner page-title-center">
+    <div class="container">
+        <div class="page-title col-md-8">
+            <h2>{% if LANGUAGE_CODE == 'en' %}Wines{% else %}Вина{% endif %} {{ object.category }}</h2>
+            {% show_breadcrumb "menu/app_page_breadcrumb.html" %}
+        </div>
+    </div>
+</section>
+
+<section class="single-product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 collection-center">
+        <img class="img-responsive" src="{% thumbnail object.image 0x700 crop="smart" quality=95 %}" alt="{{object.title}}" title="{{object.title}}" />
+      </div>
+      <div class="col-md-7">
+        <div class="m-b-40">
+          {% if object.h1 %}
+            <h1>{{ object.h1 }}</h1>
+          {% else %}
+            <h1>{{ object.title }}</h1>
+          {% endif %}
+          <h3>{% if LANGUAGE_CODE == 'uk' %}Колекція{% elif LANGUAGE_CODE == 'ru' %}Коллекция{% else %}Collection{% endif %}: <span class="lead">{{ object.category }}</span></h3>
+          {% if object.text %}
+            <h3>{% if LANGUAGE_CODE == 'uk' %}Опис{% elif LANGUAGE_CODE == 'ru' %}Описание{% else %}Description{% endif %}:</h3>
+            <div class="wine-detal-text">
+              {{ object.text|safe }}
+            </div>
+          {% endif %}
+          <div class="wine-icon">
+            <img src="{% static 'images/wine_collections/wine.svg' %}"><h4><a href="{% url 'collection:collection-list' %}">{% if LANGUAGE_CODE == 'uk' %}Подивитися інші вина{% elif LANGUAGE_CODE == 'ru' %}Посмотреть другие вина{% else %}View more wines{% endif %}</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

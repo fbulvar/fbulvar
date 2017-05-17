@@ -1,0 +1,56 @@
+{% extends "base.html" %}{% load cms_tags menu_tags staticfiles thumbnail %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock %}
+{% block meta_description %}{% page_attribute "meta_description" %}{% endblock %}
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+<section class="menu-top-banner page-title-center">
+	<div class="container">
+		<div class="page-title col-md-8">
+			<h1>{% page_attribute "page_title" %}</h1>
+			{% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
+		</div>
+	</div>
+</section>
+
+<section class="p-b-0">
+	<div class="container">
+		<div class="heading heading-center m-b-40">
+			{% for item in news_title %}
+				<h2>{{ item.title }}</h2>
+				<span class="lead">{{ item.description }}</span>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section class="news">
+	<div class="container">
+		<div class="row">
+			{% for item in news %}
+				<div class="col-xs-12 col-sm-6 col-lg-6">
+					<article class="news-item">
+		                <div class="news-item-img">
+		                    <a href="{{ item.get_absolute_url }}"><img class="img-responsive" src="{% thumbnail item.image 600x350 crop="center" quality=80 %}" alt="{{item.title}}" title="{{item.title}}" /></a>
+		                </div>
+						<div class="news-text-block">
+							<h3><a href="{{ item.get_absolute_url }}">{{item.title}}</a></h3>
+							<div class="news-description">
+								{{item.text|truncatechars_html:215|safe}}
+							</div>
+							<div class="news-meta">
+								<span class="post-date"><i class="fa fa-clock-o"></i>{{item.publishing_date|date:"d M Y"}}</span>
+								<span class="news-post-meta-right"><a href="{{ item.get_absolute_url }}" class="newsbtn">{% if LANGUAGE_CODE == 'uk' %}Читати{% elif LANGUAGE_CODE == 'ru' %}Читать{% else %}Read more{% endif %}</a></span>
+							</div>
+						</div>
+					</article>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% endblock content %}

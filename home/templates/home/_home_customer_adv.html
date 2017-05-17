@@ -1,0 +1,33 @@
+{% load thumbnail %}
+
+{% for item in home_customer_adv %}
+<div class="heading heading-center m-b-40">
+	<h2>{{item.customer_adv_title}}</h2>
+	{% if item.customer_adv_desc %}
+		<span class="lead">{{item.customer_adv_desc}}</span>
+	{% endif %}
+</div>
+<div class="row">
+	<div class="col-sm-6 col-md-6">
+		<div class="owl-carousel carousel-customer-adv">
+
+			{% for adv in item.customer_adv_item.all %}
+				<div class="customer-adv">
+					<div class="customer-adv-backg">
+						<h3 class="customer-adv-title">{{adv.title}}</h3>
+						{% if adv.description %}
+							<div class="customer-adv-desc">{{adv.description}}</div>
+						{% endif %}
+					</div>
+					<img class="img-responsive" src="{% thumbnail adv.image 550x400 crop="smart" %}" alt="{{adv.title}}" title="{{adv.title}}" />
+				</div>
+			{% endfor %}
+
+		</div>
+	</div>
+	<div class="col-sm-6 col-md-6">
+		{{item.customer_adv_text|safe}}
+		<a href="{{item.button_url}}" class="btn button gold"><strong>{{item.button}}</strong></a>
+	</div>
+</div>
+{% endfor %}
