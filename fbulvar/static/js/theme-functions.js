@@ -593,8 +593,8 @@ var INSPIRO = {};
                 items:1
             }
         },
-       // autoplay: true,
-       // autoplayTimeout:3000,
+       autoplay: true,
+       autoplayTimeout:3000,
     });
 
     $('.carousel-facts').owlCarousel({

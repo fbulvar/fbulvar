@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-28 16:41+0300\n"
+"POT-Creation-Date: 2017-05-24 17:34+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,154 +21,211 @@ msgstr ""
 msgid "Collection Application"
 msgstr ""
 
-#: collection/models.py:9 news/models.py:9
-msgid "Название категории"
-msgstr ""
-
-#: collection/models.py:10 collection/models.py:28 news/models.py:10
-#: news/models.py:25
-msgid "URL"
+#: collection/models.py:10 news/models.py:10
+msgid "Главный заголовок раздела"
 msgstr ""
 
 #: collection/models.py:11 news/models.py:11
+msgid "Подзаголовок раздела"
+msgstr ""
+
+#: collection/models.py:17 collection/models.py:18 contacts/models.py:14
+#: news/models.py:17 news/models.py:18
+msgid "Заголовок раздела"
+msgstr ""
+
+#: collection/models.py:22 news/models.py:22
+msgid "Название категории"
+msgstr ""
+
+#: collection/models.py:23 collection/models.py:47 news/models.py:23
+#: news/models.py:44
+msgid "URL"
+msgstr ""
+
+#: collection/models.py:24 news/models.py:24
 msgid "Cсылка для категории. Формируется автоматически. Не изменять"
 msgstr ""
 
-#: collection/models.py:12 collection/models.py:31 news/models.py:28
+#: collection/models.py:25 collection/models.py:50 news/models.py:47
 msgid "Meta description"
 msgstr ""
 
-#: collection/models.py:14
+#: collection/models.py:27
 msgid "Чтобы категорию отображать на сайте, она должна быть опубликована"
 msgstr ""
 
-#: collection/models.py:15 collection/models.py:38 contacts/models.py:14
+#: collection/models.py:28 collection/models.py:57 contacts/models.py:27
 msgid "Очередность вывода"
 msgstr ""
 
-#: collection/models.py:21
+#: collection/models.py:34
 msgid "Категория вин"
 msgstr ""
 
-#: collection/models.py:22
+#: collection/models.py:35
 msgid "Категории вин"
 msgstr ""
 
-#: collection/models.py:27
+#: collection/models.py:46
 msgid "Название (title)"
 msgstr ""
 
-#: collection/models.py:29
+#: collection/models.py:48
 msgid "Cсылка на продукцию. Формируется автоматически. Не изменять"
 msgstr ""
 
-#: collection/models.py:30 home/models.py:8 news/models.py:27
+#: collection/models.py:49 home/models.py:8 news/models.py:46
 msgid "H1"
 msgstr ""
 
-#: collection/models.py:32
+#: collection/models.py:51
 msgid "Описание"
 msgstr ""
 
-#: collection/models.py:34
+#: collection/models.py:53
 msgid "Фото продукции"
 msgstr ""
 
-#: collection/models.py:35
-msgid "Фото должно быть больше 700px высотой и размером меньше 500 Кб"
+#: collection/models.py:54
+msgid ""
+"Допускаются изображения разрешением больше 700px высотой и размером меньше "
+"1,0 Мб"
 msgstr ""
 
-#: collection/models.py:37
+#: collection/models.py:56
 msgid "Для отображения на сайте, продукция должна быть опубликована"
 msgstr ""
 
-#: collection/models.py:44 collection/models.py:45
+#: collection/models.py:63 collection/models.py:64
 msgid "Продукция"
 msgstr ""
 
 #: contacts/models.py:6
-msgid "Название"
-msgstr ""
-
-#: contacts/models.py:6
-msgid "Например: Телефон"
+msgid "Заголовок контактной формы"
 msgstr ""
 
 #: contacts/models.py:7
-msgid "Иконка для контакта"
+msgid "Подзаголовок контактной формы"
 msgstr ""
 
 #: contacts/models.py:8
-msgid "Например fa-phone  Примеры иконок http://fontawesome.io/icons/"
+msgid "Заголовок контактов и карты"
 msgstr ""
 
-#: contacts/models.py:9 contacts/models.py:20
-msgid "Контакт"
+#: contacts/models.py:15
+msgid "Заголовки раздела"
 msgstr ""
 
-#: contacts/models.py:9
-msgid "Например: +38 (048) 722-17-74"
+#: contacts/models.py:19
+msgid "Название"
 msgstr ""
 
-#: contacts/models.py:11
-msgid "Опубликовать на странице контактов"
+#: contacts/models.py:19
+msgid "Например: Телефон"
 msgstr ""
 
-#: contacts/models.py:13
-msgid "Опубликовать в footer (внизу страницы)"
+#: contacts/models.py:20
+msgid "Иконка для контакта"
 msgstr ""
 
 #: contacts/models.py:21
+msgid "Например fa-phone  Примеры иконок http://fontawesome.io/icons/"
+msgstr ""
+
+#: contacts/models.py:22 contacts/models.py:33
+msgid "Контакт"
+msgstr ""
+
+#: contacts/models.py:22
+msgid "Например: +38 (048) 722-17-74"
+msgstr ""
+
+#: contacts/models.py:24
+msgid "Опубликовать на странице контактов"
+msgstr ""
+
+#: contacts/models.py:26
+msgid "Опубликовать в footer (внизу страницы)"
+msgstr ""
+
+#: contacts/models.py:34
 msgid "Контакты"
 msgstr ""
 
-#: contacts/models.py:26
+#: contacts/models.py:39
 msgid "Название карты"
 msgstr ""
 
-#: contacts/models.py:26
+#: contacts/models.py:39
 msgid "Например: Главный офис"
 msgstr ""
 
-#: contacts/models.py:27
+#: contacts/models.py:40
 msgid "Latitude"
 msgstr ""
 
-#: contacts/models.py:27
+#: contacts/models.py:40
 msgid "Например 48.8569878"
 msgstr ""
 
-#: contacts/models.py:28
+#: contacts/models.py:41
 msgid "Longitude"
 msgstr ""
 
-#: contacts/models.py:28
+#: contacts/models.py:41
 msgid "Например 2.2956073"
 msgstr ""
 
-#: contacts/models.py:29
+#: contacts/models.py:42
 msgid "Масштабирование карты"
 msgstr ""
 
-#: contacts/models.py:36
+#: contacts/models.py:49
 msgid "Карта"
 msgstr ""
 
-#: contacts/models.py:37
+#: contacts/models.py:50
 msgid "Карты"
 msgstr ""
 
-#: fbulvar/settings.py:146 fbulvar/settings.py:160
+#: fbulvar/settings.py:118 fbulvar/settings.py:132
 msgid "ru"
 msgstr ""
 
-#: fbulvar/settings.py:147 fbulvar/settings.py:167
+#: fbulvar/settings.py:119 fbulvar/settings.py:139
 msgid "uk"
 msgstr ""
 
-#: fbulvar/settings.py:148 fbulvar/settings.py:174
+#: fbulvar/settings.py:120 fbulvar/settings.py:146
 msgid "en"
 msgstr ""
+
+#: fbulvar/templates/404.html:3 fbulvar/templates/404.html:4
+msgid "Страница не найдена (ошибка 404)"
+msgstr "Page Not Found (error 404)"
+
+#: fbulvar/templates/404.html:15
+msgid "Страница не найдена"
+msgstr "Page Not Found"
+
+#: fbulvar/templates/404.html:17
+msgid "Пожалуйста, воспользуйтесь разделами меню для поиска нужной информации"
+msgstr "The page you were looking for could not be found, use menu top to find the information you are looking for"
+
+#: fbulvar/templates/500.html:3 fbulvar/templates/500.html:4
+msgid "Внутренняя ошибка сервера, код ответа 500"
+msgstr "Internal Server Error Page (error 500)"
+
+#: fbulvar/templates/500.html:15
+msgid "Внутренняя ошибка сервера"
+msgstr "Internal Server Error"
+
+#: fbulvar/templates/500.html:17
+msgid ""
+"Мы отслеживаем эти ошибки автоматически, но если проблема не устранена, "
+"свяжитесь с нами или попробуйте посетить сайт чуть позже."
+msgstr "We track these errors automatically, but if the problem persists feel free to contact us. In the meantime, try refreshing."
 
 #: fbulvar/templates/base.html:72 fbulvar/templates/base.html:75
 msgid "Фирменный магазин"
@@ -198,7 +255,7 @@ msgstr ""
 msgid "Thank You! Your form has been successfully submitted!"
 msgstr ""
 
-#: home/models.py:7 news/models.py:24
+#: home/models.py:7 news/models.py:43
 msgid "Заглавие"
 msgstr ""
 
@@ -310,46 +367,52 @@ msgstr ""
 msgid "News Application"
 msgstr ""
 
-#: news/models.py:13
+#: news/models.py:26
 msgid "Категории желательно не удалять. Просто снимите отметку Опубликовано"
 msgstr ""
 
-#: news/models.py:19
+#: news/models.py:32
 msgid "Категория"
 msgstr ""
 
-#: news/models.py:20
+#: news/models.py:33
 msgid "Категории"
 msgstr ""
 
-#: news/models.py:26
+#: news/models.py:45
 msgid "Cсылка на новость. Формируется автоматически. Не изменять"
 msgstr ""
 
-#: news/models.py:29
+#: news/models.py:48
 msgid "Текст Новости"
 msgstr ""
 
-#: news/models.py:31
+#: news/models.py:50
 msgid "Фото новости"
 msgstr ""
 
-#: news/models.py:32
+#: news/models.py:51
+msgid ""
+"Допускаются изображения разрешением больше (ш*в) 600px*350px и размером "
+"меньше 0,5 Мб"
+msgstr ""
+
+#: news/models.py:53
 msgid "Дата публикации"
 msgstr ""
 
-#: news/models.py:34
+#: news/models.py:55
 msgid "Для отображения на сайте, новость должна быть опубликована"
 msgstr ""
 
-#: news/models.py:35
+#: news/models.py:56
 msgid "Колличество просмотров"
 msgstr ""
 
-#: news/models.py:41
+#: news/models.py:62
 msgid "Новость"
 msgstr ""
 
-#: news/models.py:42
+#: news/models.py:63
 msgid "Новости"
 msgstr ""

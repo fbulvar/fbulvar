@@ -1,0 +1,22 @@
+{% extends 'base.html' %}{% load cms_tags menu_tags staticfiles i18n %}
+
+{% block title %}{% trans 'Внутренняя ошибка сервера, код ответа 500' %}{% endblock %}
+{% block meta_description %}{% trans 'Внутренняя ошибка сервера, код ответа 500' %}{% endblock %}
+
+
+{% block content %}
+<section class="menu-top-banner background-contacts page-title-center"></section>
+
+<section class="page-error text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1>500</h1>
+				<h2>{% trans 'Внутренняя ошибка сервера' %}</h2>
+				<hr>
+				<p>{% trans 'Мы отслеживаем эти ошибки автоматически, но если проблема не устранена, свяжитесь с нами или попробуйте посетить сайт чуть позже.' %}</p>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

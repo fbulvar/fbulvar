@@ -3113,6 +3113,29 @@ article .img-responsive {
 
 
 /*****************************
+    Error pages
+*****************************/
+.page-error {
+    padding: 0 0 40px 0;
+}
+
+.page-error h1 {
+    font-size: 150px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.page-error h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.page-error p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*****************************
     Media
 *****************************/
 
