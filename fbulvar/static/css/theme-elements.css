@@ -2596,9 +2596,10 @@ body.device-sm .page-title-center .breadcrumb, body.device-xs .page-title-center
 }
 
 
-.background-about {
+/*.background-about {
     background-image: url("../images/about/about_big.jpg");
 }
+*/
 .background-vinogradniki {
     background-image: url("../images/vinogradniki/vinogradniki_big.jpg");
 }
@@ -2920,27 +2921,30 @@ article .img-responsive {
 }
 
 .home_news {
-    text-align: center;
+/*    text-align: center; */
 }
 .home_news img {
     margin: 0 auto;
     border-radius: 2px;
 }
 .home_news h3 {
-    margin: 10px 0;
+    margin: 0 0 15px 0;
+    font-size: 19px;
+    font-weight: 700;
 }
 .home_news p {
+    font-size: 18px;
 }
 
 .home_news_text {
-    padding: 0 25px;
+    padding: 25px 20px 0 0;
 }
 
 /***************************
     About-us
 ***************************/
 .about-img img {
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 /***************************

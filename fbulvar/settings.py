@@ -106,6 +106,7 @@ INSTALLED_APPS = (
     'aldryn_bootstrap3',
     'aldryn_style',
     'djangocms_forms',
+    'aldryn_background_image',
 
     'home',
     'collection',

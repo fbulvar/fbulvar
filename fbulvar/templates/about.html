@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<section class="menu-top-banner background-about page-title-center">
+<section class="menu-top-banner page-title-center" {% placeholder 'background-image' %}>
     <div class="container">
         <div class="page-title col-md-8">
             <h1>{% page_attribute "page_title" %}</h1>
@@ -22,14 +22,11 @@
             <div class="col-md-4">
                 <div class="about-img">
                     {% placeholder 'about_logo' %}
-                    <img class="img-responsive" src="{% static 'images/logo/logo_big.png' %}" alt="">
                 </div>
             </div>
             <div class="col-md-8">
                 <div class="heading m-b-20 text-left">
-                    {% placeholder 'about_title' %}
-                    <h2>История компании</h2>
-                    <span class="lead">Компания основана в 1857 году французским негоциантом Франсуа Нуво. С той поры не меняла своего местоположения и профиля, находясь в собственности царской семьи и советских трестов. С1992 года постепенно трансформировалась в Частное акционерное общество «Одессавинпром», которому принадлежит торговая марка «Французский Бульвар».</span>
+                    {% placeholder 'about_text' %}
                 </div>
             </div>
         </div>
@@ -40,28 +37,28 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_01.jpg' %}" alt="">
+                {% placeholder 'image_01' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_02.jpg' %}" alt="">
+                {% placeholder 'image_02' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_03.jpg' %}" alt="">
+                {% placeholder 'image_03' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_04.jpg' %}" alt="">
+                {% placeholder 'image_04' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_05.jpg' %}" alt="">
+                {% placeholder 'image_05' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_06.jpg' %}" alt="">
+                {% placeholder 'image_06' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_07.jpg' %}" alt="">
+                {% placeholder 'image_07' %}
             </div>
             <div class="col-xs-12 col-sm-4 col-md-3 about_gallery">
-                <img class="img-responsive" src="{% static 'images/about/about_08.jpg' %}" alt="">
+                {% placeholder 'image_08' %}
             </div>
         </div>
     </div>
