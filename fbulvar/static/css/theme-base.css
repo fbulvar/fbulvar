@@ -549,7 +549,7 @@ nav.mega-menu .mega-menu-content {
 
 nav.mega-menu ul li.mega-menu-item .mega-menu-title,
 nav.main-menu ul li.dropdown:not(.mega-menu-item) li {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #555;
 }
 
 .nav-main-menu-responsive {

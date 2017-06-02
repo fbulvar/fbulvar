@@ -299,6 +299,7 @@ a.read-more {
 .top-text {
     display: block;
     margin-top: 10px;
+    margin-bottom: 20px;
     font-weight: 300;
     color: #777;
     font-size: 21px;
@@ -2598,14 +2599,13 @@ body.device-sm .page-title-center .breadcrumb, body.device-xs .page-title-center
 
 /*.background-about {
     background-image: url("../images/about/about_big.jpg");
-}
-*/
+} */
 .background-vinogradniki {
     background-image: url("../images/vinogradniki/vinogradniki_big.jpg");
 }
-.background-advantages {
+/*.background-advantages {
     background-image: url("../images/advantages/advantages_big.jpg");
-}
+} */
 .background-technology {
     background-image: url("../images/technology/technology_big.jpg");
 }
@@ -2947,18 +2947,6 @@ article .img-responsive {
     margin: 20px auto;
 }
 
-/***************************
-    Other
-***************************/
-.text-block-left {
-}
-.text-block-left p {
-    text-align: left;
-    color: #777;
-    font-size: 21px;
-    line-height: 1.4;
-    font-weight: 300;
-}
 
 /***************************
     Contacts
@@ -3138,6 +3126,22 @@ article .img-responsive {
     color: #666;
 }
 
+/***************************
+    Other
+***************************/
+.text-block-left {
+}
+.text-block-left p {
+    text-align: left;
+    color: #777;
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.dropdown-menu>.active>a {
+    background-color: rgba(211, 211, 211, 0.15)!important;
+}
 
 /*****************************
     Media

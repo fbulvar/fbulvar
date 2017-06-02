@@ -7,62 +7,53 @@
 
 {% block content %}
 
-<section class="menu-top-banner background-advantages page-title-center">
-    <div class="container">
-        <div class="page-title col-md-8">
-            <h1>{% page_attribute "page_title" %}</h1>
-            {% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
-        </div>
+<section class="menu-top-banner page-title-center" {% placeholder 'background-image' %}>
+  <div class="container">
+    <div class="page-title col-md-8">
+      <h1>{% page_attribute "page_title" %}</h1>
+      {% show_breadcrumb 0 "menu/breadcrumb.html" 0 %}
     </div>
+  </div>
 </section>
 
 <section class="p-b-0">
   <div class="container">
     <div class="heading heading-center m-b-30">
-        {% placeholder 'advantages_title' %}
-        <h2>Наши преимущества</h2>
-        <span class="lead">В компании сосредоточены четыре важнейших потенциала современного виноделия. Значительные площади виноградников лоз международных сортов, преимущественно клонов прямых производителей. Квалифицированные специалисты с многолетним опытом работы и зарубежной практикой. Современная производственно-технологическая база, расположенная в центре виноградного массива.</span>
+      {% placeholder 'advantages_text' %}
     </div>
   </div>
 </section>
 
 <section class="p-t-0">
-    <div class="container advantages">
-        <div class="row">
-          <div class="col-md-12 about_gallery">
-            <img src="{% static 'images/advantages/advantages_01.jpg' %}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-12 about_gallery">
-            <img src="{% static 'images/advantages/advantages_02.jpg' %}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-12">
-            <div class="heading heading-center m-b-30">
-              <div class="default-list">
-              <h2>Четыре приоритета компании</h2>
-              
-                <ul>
-                  <li>Чистое, здоровое вино подтвержденного происхождения</li>
-                  <li>В производстве ничего, кроме винограда</li>
-                  <li>Качество опережает маркетинг</li>
-                  <li>Международные стандарты важнее отечественных инструкций</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 about_gallery">
-              <img src="{% static 'images/advantages/advantages_03.jpg' %}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-3 about_gallery">
-              <img src="{% static 'images/advantages/advantages_04.jpg' %}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-3 about_gallery">
-              <img src="{% static 'images/advantages/advantages_05.jpg' %}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-3 about_gallery">
-              <img src="{% static 'images/advantages/advantages_06.jpg' %}" class="img-responsive" alt="">
+  <div class="container advantages">
+    <div class="row">
+      <div class="col-md-12 about_gallery">
+        {% placeholder 'img_big_01' %}
+      </div>
+      <div class="col-md-12 about_gallery">
+        {% placeholder 'img_big_02' %}
+      </div>
+      <div class="col-md-12">
+        <div class="heading heading-center m-b-30">
+          <div class="default-list">
+            {% placeholder 'Priority' %}
           </div>
         </div>
+      </div>
+      <div class="col-md-3 about_gallery">
+        {% placeholder 'img_01' %}
+      </div>
+      <div class="col-md-3 about_gallery">
+        {% placeholder 'img_02' %}
+      </div>
+      <div class="col-md-3 about_gallery">
+        {% placeholder 'img_03' %}
+      </div>
+      <div class="col-md-3 about_gallery">
+        {% placeholder 'img_04' %}
+      </div>
     </div>
+  </div>
 </section>
 
 {% endblock content %}

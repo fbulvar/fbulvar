@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<section class="menu-top-banner background-technology page-title-center">
+<section class="menu-top-banner page-title-center" {% placeholder 'background-image' %}>
     <div class="container">
         <div class="page-title col-md-8">
             <h1>{% page_attribute "page_title" %}</h1>
@@ -19,15 +19,9 @@
 <section class="p-b-0">
   <div class="container">
     <div class="heading heading-center m-b-30">
-        <h2>Технологии и кооперация</h2>
-        <span class="lead">Сырьевая и производственная  база компании позволяет перерабатывать, хранить и бутилировать  крупные объемы виноматериалов. В 2014 году мы стали винодельческим кластером, предложив выгодные условия кооперации многим винодельческим предприятиям Украины. На него откликнулись торговые марки крупных предприятий и небольших компаний, которым мы предоставляем широкий спектр услуг:</span>
-        <div class="default-list">
-          <ul>
-            <li>изготовление виноматериалов для игристых и тихих вин;</li>
-            <li>хранение вин с последующим розливом  на разных типах линий;</li>
-            <li>выпуск эксклюзивных партий вин для ресторанов и кафе.</li>
-          </ul>
-        </div>
+      <div class="default-list">
+        {% placeholder 'technology_text' %}
+      </div>
     </div>
   </div>
 </section>
@@ -36,7 +30,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <img src="{% static 'images/technology/technology_01.jpg' %}" class="img-responsive" alt="">
+        {% placeholder 'technology_images' %}
       </div>
     </div>
   </div>
