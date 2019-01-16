@@ -29,7 +29,7 @@ class Home(models.Model):
 
 
 class CustomerAdvItem(models.Model):
-	image = models.ImageField(_('Картинка преимущества'), upload_to='page')
+	image = models.ImageField(_('Картинка преимущества'), upload_to='page', help_text=_('Минимальный размер в px 560*420'))
 	title = models.CharField(_('Заглавие преимущества'), max_length=32, blank=True, null=True)
 	description = models.CharField(_('Краткое описание преимущества'), max_length=64, blank=True, null=True)
 	publish = models.BooleanField(_('Опубликовано'), default=True)

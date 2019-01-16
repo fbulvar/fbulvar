@@ -71,9 +71,6 @@
                           <li>
                             <img src="{% static 'images/footer/shopping1.svg' %}" alt="{% trans 'Фирменный магазин' %}" title="{% trans 'Фирменный магазин' %}"/>{% trans 'Французский Бульвар 10, Одесса' %}<br><span class="time">{% trans 'Пн-Пт 9:00-19:00, +38 (048) 722-17-74' %}</span>
                           </li>
-                          <li>
-                            <img src="{% static 'images/footer/shopping1.svg' %}" alt="{% trans 'Фирменный магазин' %}" title="{% trans 'Фирменный магазин' %}"/>{% trans 'пр-т Академика Глушко 14/5, Одесса' %}<br><span class="time">{% trans 'Пн-Пт 9:00-19:00, +38 (048) 722-17-74' %}</span>
-                          </li>  
                         </ul>
                     </div>
                 </div>
@@ -121,12 +118,12 @@
     </div>
   </footer>
 
-  <!-- <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a> -->
-  <!-- SCRIPTS -->
+  {# <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a> #}
+  {#  SCRIPTS  #}
   <script src="{% static "js/jquery-1.11.2.min.js" %}"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  {# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> #}
   <script src="{% static "js/plugins.js" %}"></script>
-  <!--<script src="{% static "js/owl.carousel.min.js" %}"></script> -->
+  {# <script src="{% static "js/owl.carousel.min.js" %}"></script> #}
   <script src="{% static "js/theme-functions.js" %}"></script>
 {% block js %}{% endblock js %}
 {% render_block "js" %}
