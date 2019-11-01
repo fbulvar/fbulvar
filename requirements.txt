@@ -34,7 +34,7 @@ html5lib==0.9999999
 jsonfield==2.0.1
 olefile==0.44
 packaging==16.8
-Pillow==4.1.0
+Pillow==6.2.0
 pyparsing==2.2.0
 pytz==2017.2
 requests==2.13.0
