@@ -30,7 +30,7 @@ djangocms-text-ckeditor==3.4.0
 djangocms-video==2.0.3
 easy-thumbnails==2.3
 hashids==1.2.0
-html5lib==0.9999999
+html5lib==0.999999999
 jsonfield==2.0.1
 olefile==0.44
 packaging==16.8
